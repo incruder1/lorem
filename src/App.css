@@ -1,0 +1,23 @@
+.company-name:first-letter {
+  text-transform: uppercase;
+}
+
+.job-role:first-letter {
+  text-transform: uppercase;
+}
+
+.job-location:first-letter {
+  text-transform: uppercase;
+}
+
+.card-mask {
+  mask-image: linear-gradient(
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.card-animation {
+  transition: opacity 0.5s ease;
+}
