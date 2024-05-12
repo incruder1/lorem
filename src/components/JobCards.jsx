@@ -150,7 +150,7 @@ const JobCards = () => {
         if (Object.keys(selectedfilters).length > 0) {
           if (
             filtersLowerCase.min_experience !== null &&
-            job.minExp < parseInt(selectedfilters.min_experience)
+            job.minExp > parseInt(selectedfilters.min_experience)
           ) {
             return false;
           }

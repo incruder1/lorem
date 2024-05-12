@@ -174,11 +174,11 @@ const Filters = () => {
     //debounce code
     const debounce = setTimeout(() => {
       dispatch(setCompanyname(searchValue));
-    },400)
+    }, 100)
 
     //cleanup function
     return () => clearTimeout(debounce)
-  },[searchValue])
+  }, [searchValue])
 
   return (
     <Grid
@@ -256,7 +256,7 @@ const Filters = () => {
       >
         <TextField
           sx={{ m: 1 }}
-          label="Seacrh Company Name"
+          label="Search Company Name"
           variant="outlined"
           value={searchValue}
           fullWidth
